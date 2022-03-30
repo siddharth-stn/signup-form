@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./styles.css" type="text/css">
     <script src="./script.js" defer></script>
 </head>
+
 <body>
     <!--done Todo: Gather assets, large background image (from unsplash.com) *credit the creator  --->
     <!-- Todo: Photo by <a href="https://unsplash.com/@jakefelixx?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jacob Felix</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
@@ -25,25 +27,46 @@
             </div>
         </div>
         <div class="side-right">
-            <div class="top">
-                <div class="message">
-                    <pre>This is not a real online service! You know you need something 
-                        like this in your life to help you realize your deepest dreams. 
-                        Sign up now to get started
-
-                        You know you want to.
-                    </pre>
+            <div class="message">
+                <p>This is not a real online service! You know you need something <br>
+                    like this in your life to help you realize your deepest dreams. <br>
+                    Sign up now to get started<br>
+                    <br>
+                    You know you want to.
+                </p>
+            </div>
+            <div class="formDiv">
+                <form action="http://httpbin.org/post" method="post">
+                    <h3>Let's do this!</h3>
+                    <div>
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" id="firstName" value="Thor">
+                    </div>
+                    <div>
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" value="Odinson!">
+                    </div>
+                    <div>
+                        <input type="email" id="email">
+                    </div>
+                    <div>
+                        <input type="tel" id="tel">
+                    </div>
+                    <div>
+                        <input type="password" id="password">
+                    </div>
+                    <div>
+                        <input type="password" id="confirmPassword">
+                    </div>
+                </form>
+                <div class="buttonDiv">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="https://www.w3schools.com">Log in</a></p>
                 </div>
             </div>
-            <div class="form"></div>
         </div>
     </div>
 
-
-
-    <!-- Todo: add the form to the structre with the required elements -->
-    
-
-
 </body>
+
 </html>

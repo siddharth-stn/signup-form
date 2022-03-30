@@ -343,6 +343,12 @@ template {
   display: none;
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 body {
   background-color: whitesmoke;
   height: 100vh;
@@ -353,7 +359,7 @@ body {
   height: 100%;
 }
 .container .side-left {
-  width: 40%;
+  width: 50%;
   background-image: url("../assets/images/background-image.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -387,14 +393,53 @@ body {
 }
 
 .side-right {
-  border: 2px solid red;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.side-right .top {
-  border: 2px solid green;
-  height: 60%;
+.side-right .message {
+  height: 40%;
+  padding: 30px 50px 0px;
+}
+.side-right .message p {
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.formDiv {
+  border: 2px solid red;
+  height: 100%;
+}
+.formDiv form {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px 50px 10px;
+}
+.formDiv form h3 {
+  border: 2px solid red;
+}
+.formDiv .buttonDiv {
+  padding: 30px 50px 10px;
+  box-shadow: inset 0 7px 20px -12px #596D48;
+}
+.formDiv .buttonDiv button {
+  width: 200px;
+  height: 45px;
+  background-color: #596D48;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.formDiv .buttonDiv p a {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */
