@@ -2,8 +2,8 @@
 @use 'fonts';
 @use '../normalize.css';
 
-*, 
-::after, 
+*,
+::after,
 ::before {
     box-sizing: border-box;
 }
@@ -16,7 +16,7 @@ body {
 .container {
     display: flex;
     height: 100%;
-    
+
     .side-left {
         width: 50%;
         background-image: url("../assets/images/background-image.jpg");
@@ -30,11 +30,12 @@ body {
 
 .site-logo {
     width: 100%;
-    height: 150px;   
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(29, 18, 18, 0.7);
+
     p {
         font-family: 'norsebold';
         font-size: 4.5rem;
@@ -45,6 +46,7 @@ body {
 .image-div {
     width: 20%;
     height: 140px;
+
     img {
         object-fit: contain;
         width: 100%;
@@ -56,9 +58,11 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+
     .message {
         height: 40%;
         padding: 30px 50px 0px;
+
         p {
             font-size: 1.4rem;
             font-family: Arial, Helvetica, sans-serif;
@@ -68,19 +72,69 @@ body {
     }
 }
 
+
+
 .formDiv {
-    border: 2px solid red;
     height: 100%;
+
     form {
+        padding: 0px 50px 0px;
         font-family: Arial, Helvetica, sans-serif;
-        padding: 0px 50px 10px;
+
         h3 {
-            border: 2px solid red;
+            margin-top: 0px;
+        }
+
+        input {
+            border: 1px solid var.$input-border-color;
+            border-radius: 5px;
+            outline: none;
+            padding: 5px 10px;
+
+            &:focus {
+                border-color: blue;
+                box-shadow: 2px 2px 6px 0px rgb(0, 0, 0, 0.5);
+            }
         }
     }
+
+    .inputWrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-bottom: 20px;
+        justify-content: space-between;
+        width: 550px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            width: 220px;
+
+            label {
+                font-size: .7rem;
+            }
+
+            .error {
+                border-color: red;
+            }
+
+            &:nth-child(5) {
+                &::after {
+                    content: "*Passwords do not match";
+                    font-size: .7rem;
+                    padding-top: 2px;
+                    color: red;
+                }
+            }
+        }
+
+    }
+
     .buttonDiv {
         padding: 30px 50px 10px;
         box-shadow: inset 0 7px 20px -12px var.$account-btn-color;
+
         button {
             width: 200px;
             height: 45px;
@@ -94,6 +148,7 @@ body {
             margin-bottom: 20px;
             cursor: pointer;
         }
+
         p {
             a {
                 text-decoration: none;
@@ -103,5 +158,3 @@ body {
         }
     }
 }
-
-

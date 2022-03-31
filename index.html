@@ -36,31 +36,37 @@
                 </p>
             </div>
             <div class="formDiv">
-                <form action="http://httpbin.org/post" method="post">
+                <form action="http://httpbin.org/post" method="post" id="page-form">
                     <h3>Let's do this!</h3>
-                    <div>
-                        <label for="firstName">FIRST NAME</label>
-                        <input type="text" id="firstName" value="Thor">
-                    </div>
-                    <div>
-                        <label for="lastName">LAST NAME</label>
-                        <input type="text" id="lastName" value="Odinson!">
-                    </div>
-                    <div>
-                        <input type="email" id="email">
-                    </div>
-                    <div>
-                        <input type="tel" id="tel">
-                    </div>
-                    <div>
-                        <input type="password" id="password">
-                    </div>
-                    <div>
-                        <input type="password" id="confirmPassword">
+                    <div class="inputWrap">
+                        <div>
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" id="firstName" value="Thor">
+                        </div>
+                        <div>
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" id="lastName" value="Odinson">
+                        </div>
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div>
+                            <label for="tel">NUMBER</label>
+                            <input type="tel" id="tel">
+                        </div>
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" class="error">
+                        </div>
+                        <div>
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmPassword" class="error">
+                        </div>
                     </div>
                 </form>
                 <div class="buttonDiv">
-                    <button type="submit">Create Account</button>
+                    <button type="submit" form="page-form">Create Account</button>
                     <p>Already have an account? <a href="https://www.w3schools.com">Log in</a></p>
                 </div>
             </div>

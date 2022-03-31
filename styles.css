@@ -409,15 +409,49 @@ body {
 }
 
 .formDiv {
-  border: 2px solid red;
   height: 100%;
 }
 .formDiv form {
+  padding: 0px 50px 0px;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 0px 50px 10px;
 }
 .formDiv form h3 {
-  border: 2px solid red;
+  margin-top: 0px;
+}
+.formDiv form input {
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 10px;
+}
+.formDiv form input:focus {
+  border-color: blue;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.5);
+}
+.formDiv .inputWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  width: 550px;
+}
+.formDiv .inputWrap div {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
+.formDiv .inputWrap div label {
+  font-size: 0.7rem;
+}
+.formDiv .inputWrap div .error {
+  border-color: red;
+}
+.formDiv .inputWrap div:nth-child(5)::after {
+  content: "*Passwords do not match";
+  font-size: 0.7rem;
+  padding-top: 2px;
+  color: red;
 }
 .formDiv .buttonDiv {
   padding: 30px 50px 10px;
